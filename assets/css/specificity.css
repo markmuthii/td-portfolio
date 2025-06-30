@@ -1,0 +1,15 @@
+#first {
+  color: purple;
+}
+
+h1.heading#first {
+  color: blue;
+}
+
+h1 {
+  color: red !important;
+}
+
+.heading {
+  color: green;
+}

@@ -4,22 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <!-- Relative path (start from where we are) -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- Absolute path (start from root) -->
-    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
 
     <script
       src="https://kit.fontawesome.com/fcb848651e.js"
       crossorigin="anonymous"
     ></script>
 
+    <!-- CASCADING -->
+    <!-- 1. Order -->
+    <!-- The style that comes last will be given priority -->
+
+    <!-- 2. Specificity -->
+    <!-- Tags -->
+    <!-- Class -->
+    <!-- IDs -->
+
+    <!-- 3. Importance -->
+
     <!-- Inline -->
     <!-- Within the tags -->
 
+    <!-- External -->
+    <!-- Relative path (start from where we are) -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <!-- Internal -->
     <!-- Inside the head -->
+
     <style>
       body {
         background-color: red;
@@ -27,12 +38,22 @@
         font-family: Arial, sans-serif;
       }
 
+      .header {
+        background-color: purple;
+      }
+
+      #aboutHeading {
+        color: chartreuse;
+      }
+
       h1 {
         text-transform: uppercase;
+        color: blue;
       }
     </style>
 
-    <!-- External -->
+    <!-- Absolute path (start from root) -->
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
   </head>
   <body>
     <!-- Navigation -->
@@ -72,7 +93,7 @@
 
       <!-- About Me Section -->
       <section class="about">
-        <h1 style="text-transform: lowercase">About Me</h1>
+        <h1 id="aboutHeading" style="text-transform: lowercase">About Me</h1>
 
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, amet?

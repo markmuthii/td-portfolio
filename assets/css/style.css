@@ -1,0 +1,9 @@
+body {
+  background-color: blue;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
