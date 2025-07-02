@@ -1,0 +1,93 @@
+/* Reset default user agent styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Find out what this does */
+}
+
+body {
+  padding: 20px;
+  background-color: green;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin: 20px 0;
+}
+
+/* Navigation */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 20px;
+  background-color: rgb(234, 234, 234);
+}
+
+.hero {
+  display: flex;
+  gap: 20px;
+}
+
+.hero > div {
+  height: 300px;
+  background-color: aqua;
+}
+
+.hero .left {
+  width: 40%;
+}
+
+.hero .right {
+  width: 60%;
+  background-color: blue;
+}
+
+/* Projects */
+
+.projects {
+  display: flex;
+  gap: 20px;
+}
+
+.projects > div {
+  height: 300px;
+  background-color: blueviolet;
+  width: calc(100% / 3);
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  gap: 20px;
+}
+
+.contact > div {
+  height: 300px;
+  background-color: maroon;
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: pink;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero > .left,
+  .hero > .right {
+    width: 100%;
+  }
+}
