@@ -77,6 +77,10 @@ section {
   width: 50%;
 }
 
+.contact .right {
+  background-color: brown;
+}
+
 @media screen and (max-width: 767px) {
   body {
     background-color: pink;
@@ -88,6 +92,24 @@ section {
 
   .hero > .left,
   .hero > .right {
+    width: 100%;
+  }
+
+  .projects {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects > div {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .contact {
+    flex-direction: column-reverse;
+  }
+
+  .contact > div {
     width: 100%;
   }
 }
